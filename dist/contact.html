@@ -63,106 +63,66 @@
                             <!-- to get an API token!-->
                             <form>
                                 <div class="row mb-3">
-                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
                                     <div class="col-sm-10">
                                     <input type="email" class="form-control" id="inputEmail3">
-                                </div>
+                                    </div>
                                 </div>
                                 <div class="row mb-3">
-                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Email</label>
                                     <div class="col-sm-10">
                                     <input type="password" class="form-control" id="inputPassword3">
-                                </div>
+                                    </div>
                                 </div>
                                 <fieldset class="row mb-3">
-                                    <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                                    <legend class="col-form-label col-sm-2 pt-0">Sex</legend>
                                     <div class="col-sm-10">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                                        <label class="form-check-label" for="gridRadios1">
-                                        First radio
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                        <label class="form-check-label" for="gridRadios2">
-                                        Second radio
-                                        </label>
-                                    </div>
-                                    <div class="form-check disabled">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-                                        <label class="form-check-label" for="gridRadios3">
-                                        Third disabled radio
-                                        </label>
-                                    </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="gridRadios1">
+                                            Man
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                            <label class="form-check-label" for="gridRadios2">
+                                            Woman
+                                            </label>
+                                        </div>
                                     </div>
                                 </fieldset>
-                                <div class="row mb-3">
-                                    <div class="col-sm-10 offset-sm-2">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                        <label class="form-check-label" for="gridCheck1">
-                                        Example checkbox
-                                        </label>
-                                    </div>
-                                    </div>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Sign in</button>
-                              </form>
 
+                                  <div class="row mb-3">
+                                    <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label">Text</label>
+                                    <div class="col-sm-10">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                  </div>
 
-                            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                                <div class="form-floating">
-                                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                    <label for="name">Name</label>
-                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                                </div>
-                                <div class="form-floating">
-                                    <input class="form-control" id="email" type="email" placeholder="Enter your email..." data-sb-validations="required,email" />
-                                    <label for="Email">Email</label>
-                                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                                </div>
-                                <!-- <div class="form-floating"> -->
-                                    <!-- <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 12rem" data-sb-validations="required"></textarea> -->
-                                    <label for="message">Sex</label>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                        <label class="form-check-label" for="flexRadioDefault1">Man
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                        <label class="form-check-label" for="flexRadioDefault2">Woman
-                                        </label>
-                                    </div>
-                                    <div class="invalid-feedback" data-sb-feedback="message:required">Gender is required.</div>
-                                </div>
-                                <div class="form-floating">
-                                    <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 12rem" data-sb-validations="required"></textarea>
-                                    <label for="message">Text</label>
-                                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                                </div>
-                                <br />
+                                <!-- <div class="row mb-3">
+                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Text</label>
+                                    <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword3">
+                                </div> -->
+                        
+                            
                                 <!-- Submit success message-->
                                 <!---->
                                 <!-- This is what your users will see when the form-->
                                 <!-- has successfully submitted-->
-                                <div class="d-none" id="submitSuccessMessage">
+                                <!-- <div class="d-none" id="submitSuccessMessage">
                                     <div class="text-center mb-3">
                                         <div class="fw-bolder">Form submission successful!</div>
                                         To activate this form, sign up at
                                         <br />
                                         <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                     </div>
-                                </div>
+                                </div> -->
                                 <!-- Submit error message-->
-                                <!---->
-                                <!-- This is what your users will see when there is-->
-                                <!-- an error submitting the form-->
-                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                                 <!-- Submit Button-->
-                                <button class="btn btn-primary text-uppercase disabled" id="submitButton" type="submit">Send</button>
+                                <div class="col-auto">
+                                <button class="btn btn-primary" type="submit">SEND</button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -216,3 +176,6 @@
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
+
+
+
